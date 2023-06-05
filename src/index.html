@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
@@ -15,25 +18,141 @@
     <header class="header">
       <nav class="nav">
         <ul class="ul">
-          <li>
+          <li class="nav__logo">
             <a href="">Noir Bites</a>
           </li>
-          <li>
-            <a href="">Carta</a>
-          </li>
-          <li>
-            <a href="">Sobre Nosotros</a>
-          </li>
-          <li>
-            <a href="">Hacer Pedido</a>
-          </li>
-          <li>
-            <a href="">Reserva</a>
-          </li>
+          <div class="nav__container">
+            <li class="nav__li">
+              <a href="">Carta</a>
+            </li>
+            <li class="nav__li">
+              <a href="">Sobre Nosotros</a>
+            </li>
+            <li class="nav__li">
+              <a href="">Hacer Pedido</a>
+            </li>
+            <li class="button">
+              <a href="#book">Reserva</a>
+            </li>
+          </div>
         </ul>
       </nav>
+      <div class="header__title-container">
+        <h1 class="header__title">Noir</h1>
+        <h1 class="header__title header__title--outlined">Bites</h1>
+      </div>
+      <div class="header__slogan-container">
+        <p>¿Estás list@ para probar algo diferente y deliciosamente oscuro?</p>
+        <img class="header__slogan-icon" src="/assets/teeth icon.svg" alt="" />
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div class="gallery">
+        <h2 class="gallery__title">Nuestros bites</h2>
+        <div class="gallery__container">
+          <img
+            class="gallery__image"
+            src="/assets/burguer-photo-1.png"
+            alt=""
+          />
+          <img
+            class="gallery__image"
+            src="/assets/burguer-photo-2.png"
+            alt=""
+          />
+          <img
+            class="gallery__image"
+            src="/assets/burguer-photo-3.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="location">
+        <img class="location__icon" src="/assets/location-icon.svg" alt="" />
+        <p class="text--normal">Avenida Mundoluz 19, Madrid.</p>
+      </div>
+      <form id="book" class="reservation">
+        <div class="reservation__container">
+          <div class="reservation__option reservation__option--name">
+            <label class="reservation__title" for="name">Nombre</label>
+            <input
+              class="reservation__input reservation__input--name"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Tu nombre y apellidos...."
+            />
+          </div>
+          <div class="reservation__data-inputs-container">
+            <div class="reservation__option reservation__option--people">
+              <label class="reservation__title" for="people">
+                <span class="reservation__icon"></span>
+                Personas</label
+              >
+              <select
+                class="reservation__input reservation__input--select"
+                name="people"
+                id="people"
+              >
+                <option>N. de personas.</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </div>
+
+            <div class="reservation__option">
+              <label class="reservation__title" for="name">
+                <span
+                  class="reservation__icon reservation__icon--calendar"
+                ></span>
+                Fecha</label
+              >
+              <input
+                class="reservation__input reservation__input--select"
+                id="date"
+                name="date"
+                type="date"
+              />
+            </div>
+            <div class="reservation__option reservation__option--hour">
+              <label class="reservation__title" for="name">
+                <span class="reservation__icon reservation__icon--clock"></span>
+                Hora</label
+              >
+              <select
+                class="reservation__input reservation__input--select"
+                id="hour"
+                name="hour"
+                type="text"
+                placeholder="Elige una hora."
+              >
+                <option>Elige una hora</option>
+                <option>13:00</option>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>15:00</option>
+                <option>15:30</option>
+                <option>20:00</option>
+                <option>20:30</option>
+                <option>21:00</option>
+                <option>21:30</option>
+                <option>22:00</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button class="reservation__button button">Reservar</button>
+      </form>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

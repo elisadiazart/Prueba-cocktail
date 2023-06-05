@@ -1,18 +1,91 @@
-.header{
-    height: 100vh;
-    background-image: url(/src/assets/food-photographer-X92WLoaQ1_o-unsplash\ 1.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+.header {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+  background-image: url("/assets/food-photographer-X92WLoaQ1_o-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: right top -6rem;
+
+  &__title {
+    font-family: "Velodroma Regular", sans-serif;
+    color: var(--orange);
+    margin: 0;
+    font-size: 6.5rem;
+    display: inline;
+
+    &--outlined {
+      display: inline;
+      color: var(--bg-color);
+      text-shadow: -1px 0 var(--orange), 0 1px var(--orange),
+        1px 0 var(--orange), 0 -1px var(--orange);
+    }
+
+    &-container {
+      width: 1000px;
+      margin: auto;
+      display: flex;
+      padding-top: 32vh;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__slogan {
+    &-container {
+      text-transform: uppercase;
+      font-weight: 400;
+      width: 350px;
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 4rem;
+      gap: 0.5rem;
+      transform: translate(-50% 0);
+      left: 50%;
+    }
+    &-icon {
+      width: 50px;
+    }
+  }
 }
 
-.ul{
+.ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 1000px;
+  padding: 2rem 0;
+  margin: auto;
+  align-items: center;
+}
+
+.nav {
+  background-color: rgba(1, 3, 6, 0.581);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  &__logo {
+    font-family: "Velodroma Regular", sans-serif;
+  }
+
+  &__container {
     display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 600;
-    width: 1200px;
-    padding: 3rem;
-    margin: auto;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  &__li {
+    &:hover {
+      color: var(--orange);
+      text-decoration: underline;
+    }
+  }
 }

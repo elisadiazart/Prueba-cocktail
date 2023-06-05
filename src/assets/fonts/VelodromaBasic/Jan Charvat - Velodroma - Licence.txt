@@ -1,0 +1,26 @@
+Copyright © 2015 Jan Charvát
+with Reserved Names "Velodroma" and "Jan Charvat"  
+
+FONT LICENSE
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining a copy of the font software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the font software, subject to the following conditions:
+
+1) Neither the font software nor any of its individual components, in original or modified versions, may be sold by itself.
+
+2) Original or modified versions of the font software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.
+
+3) No modified version of the font software may use the Reserved Name(s) or combinations of Reserved Names with other words unless explicit written permission is granted by the Jan Charvat. This restriction only applies to the primary font name as presented to the users.
+
+4) The name of Jan Charvat shall not be used to promote, endorse or advertise any modified version, except to acknowledge the contribution(s) of Jan Charvát with explicit written permission from him.
+
+5) The font software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
+
+TERMINATION & TERRITORY
+This license has no limits on time and territory, but it becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER
+The font software is provided "as is", without warranty of any kind, express or implied, including but not limited to any warranties of merchantability, fitness for a particular purpose and noninfringement of copyright, patent, trademark, or other right. In no event shall Jan Charvat be liable for any claim, damages or other liability, including any general, special, indirect, incidental, or consequential damages, whether in an action of contract, tort or otherwise, arising from, out of the use or inability to use the font software or from other dealings in the font software.
+
+Jan Charvat, 2015
+http://jancharvat.cz
