@@ -1,1 +1,18 @@
+.header{
+    height: 100vh;
+    background-image: url(/src/assets/food-photographer-X92WLoaQ1_o-unsplash\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
 
+.ul{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 1200px;
+    padding: 3rem;
+    margin: auto;
+}
