@@ -32,7 +32,7 @@ bullet2.addEventListener("click", (e) => {
   e.target.classList.add("gallery__bullet--active");
   bullet1.classList.remove("gallery__bullet--active");
   bullet3.classList.remove("gallery__bullet--active");
-  gallery.style.transform = `translateX(-46.5%)`;
+  gallery.style.transform = `translateX(-46%)`;
 });
 
 bullet3.addEventListener("click", (e) => {
@@ -40,5 +40,5 @@ bullet3.addEventListener("click", (e) => {
   e.target.classList.add("gallery__bullet--active");
   bullet2.classList.remove("gallery__bullet--active");
   bullet1.classList.remove("gallery__bullet--active");
-  gallery.style.transform = `translateX(-93%)`;
+  gallery.style.transform = `translateX(-91.8%)`;
 });
