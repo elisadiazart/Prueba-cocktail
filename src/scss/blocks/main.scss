@@ -3,32 +3,78 @@
 .gallery {
   background-color: rgba(255, 255, 255, 0.12);
   position: relative;
+  width: 100%;
+  overflow: hidden;
+  @include responsive(laptop) {
+    width: 100%;
+  }
 
   &__title {
-    color: white;
-    font-size: 48px;
-    position: absolute;
-    top: -0.3rem;
-    transform: translate(-50% 0);
-    left: 50%;
     font-family: "Velodroma Wide";
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    position: absolute;
+    top: -.4rem;
+    text-align: center;
+    z-index: 10;
+    @include responsive(laptop) {
+    top: -2.5rem;
+    font-size: 48px;
+    z-index: 10;
+    
+    }
   }
 
   &__container {
+    width: 200%;
     display: flex;
     margin: auto;
     justify-content: space-between;
-    padding: 4rem 0;
-    width: 100vw;
+    
+    flex-flow: row nowrap;
+    padding: 2rem;
+    align-items: center;
+    transform: translateX(0%);
+    transition: transform .2s;
+    gap: 2rem;
+    padding-bottom: 1rem;
     @include responsive(laptop) {
       width: 1000px;
+      padding: 2rem;
     }
   }
 
   &__image {
+    width: calc(100% / 2 - 2em);
+    @include responsive(laptop) {
     width: 300px;
     object-fit: contain;
+    }
+  }
+
+  &__bullets{
+    display: flex;
+    gap: .5rem;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 1.2rem;
+    @include responsive(laptop) {
+      display: none;
+    }
+  }
+
+  &__bullet{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+
+    &--active{
+      background-color: var(--orange);
+    }
   }
 }
 

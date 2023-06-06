@@ -11,7 +11,7 @@
     color: white;
     background-size: 900px;
     background-position: right top -6rem;
-    width: 100vw;
+    width: 100%;
 
     overflow: hidden;
   }
@@ -160,6 +160,7 @@
     font-size: 1.1rem;
     @include responsive(laptop) {
       color: white;
+      font-size: .9rem;
       &:hover {
         color: var(--orange);
         text-decoration: underline;
