@@ -1,15 +1,27 @@
+@use "../mixins/responsive.scss" as *;
+
 .reservation {
   display: flex;
   flex-direction: column;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
+  @include responsive(laptop) {
+    margin-bottom: 6rem;
+  }
 
   &__container {
     background-color: var(--orange);
-    width: 1000px;
-    margin: auto;
+    width: auto;
+    margin: 0 2rem;
     border-radius: 30px;
-    padding: 2.75rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    padding: 3rem 1rem;
+    @include responsive(laptop) {
+      width: 1000px;
+      margin: auto;
+      padding: 2.75rem;
+
+      margin-bottom: 4rem;
+    }
   }
 
   &__option {
@@ -17,6 +29,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: center;
+    @include responsive(laptop) {
+      padding: 0 3rem;
+    }
 
     &--name {
       border-bottom: 2px solid black;
@@ -24,26 +42,34 @@
     }
 
     &--people {
-      border-right: 2px solid black;
-      padding-right: 6rem;
+      @include responsive(laptop) {
+        border-right: 2px solid black;
+      }
     }
 
     &--hour {
-      padding-left: 6rem;
-      border-left: 2px solid black;
+      @include responsive(laptop) {
+        border-left: 2px solid black;
+      }
     }
   }
 
   &__button {
-    margin: auto;
+    margin: 0 2rem;
     background-color: var(--bg-color);
+    border: 2px solid var(--orange);
+    color: var(--orange);
     text-transform: uppercase;
-    font-size: 1.2rem;
     padding: 0.8rem 3rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    @include responsive(laptop) {
+      margin: auto;
+      cursor: pointer;
 
-    &:hover {
-      color: black;
+      &:hover {
+        color: black;
+      }
     }
   }
 
@@ -71,13 +97,25 @@
     padding: 0.7rem 1.5rem;
     font-size: 0.9rem;
     border-radius: 50px;
+    width: 100%;
+    @include responsive(laptop) {
+      border: none;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+      border-radius: 50px;
+      width: auto;
+    }
 
     &--name {
-      width: 300px;
+      @include responsive(laptop) {
+        width: 300px;
+      }
     }
 
     &--select {
-      width: 200px;
+      @include responsive(laptop) {
+        width: 200px;
+      }
     }
   }
 
@@ -92,6 +130,12 @@
   &__data-inputs-container {
     padding: 1.5rem 0 0 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include responsive(laptop) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }

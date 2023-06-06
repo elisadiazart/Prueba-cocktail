@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .gallery {
   background-color: rgba(255, 255, 255, 0.12);
   position: relative;
@@ -15,10 +17,13 @@
 
   &__container {
     display: flex;
-    width: 1000px;
     margin: auto;
     justify-content: space-between;
     padding: 4rem 0;
+    width: 100vw;
+    @include responsive(laptop) {
+      width: 1000px;
+    }
   }
 
   &__image {
